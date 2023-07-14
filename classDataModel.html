@@ -81,28 +81,81 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa777da4c632e4659ee5b1447ad513458"><td class="memItemLeft" align="right" valign="top"><a id="aa777da4c632e4659ee5b1447ad513458"></a>
-Logging *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#aa777da4c632e4659ee5b1447ad513458">Log</a></td></tr>
-<tr class="memdesc:aa777da4c632e4659ee5b1447ad513458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log class pointer for use in Tools, it can be used to send messages which can have multiple error levels and destination end points. <br /></td></tr>
+<tr class="memitem:aa777da4c632e4659ee5b1447ad513458"><td class="memItemLeft" align="right" valign="top">Logging *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#aa777da4c632e4659ee5b1447ad513458">Log</a></td></tr>
 <tr class="separator:aa777da4c632e4659ee5b1447ad513458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4baac5fe364a7a23762d70d2c2216486"><td class="memItemLeft" align="right" valign="top"><a id="a4baac5fe364a7a23762d70d2c2216486"></a>
-Store&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#a4baac5fe364a7a23762d70d2c2216486">vars</a></td></tr>
-<tr class="memdesc:a4baac5fe364a7a23762d70d2c2216486"><td class="mdescLeft">&#160;</td><td class="mdescRight">This Store can be used for any variables. It is an inefficent ascii based storage and command line arguments will be placed in here along with ToolChain variables. <br /></td></tr>
+<tr class="memitem:a4baac5fe364a7a23762d70d2c2216486"><td class="memItemLeft" align="right" valign="top">Store&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#a4baac5fe364a7a23762d70d2c2216486">vars</a></td></tr>
 <tr class="separator:a4baac5fe364a7a23762d70d2c2216486"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaeb97ea84c890b10a40bf353f722e4e"><td class="memItemLeft" align="right" valign="top"><a id="aaaeb97ea84c890b10a40bf353f722e4e"></a>
-BStore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#aaaeb97ea84c890b10a40bf353f722e4e">CStore</a></td></tr>
-<tr class="memdesc:aaaeb97ea84c890b10a40bf353f722e4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a more efficent binary Store that can be used to store a dynamic set of inter Tool variables, very useful for constants and and flags hence the name CStore. <br /></td></tr>
+<tr class="memitem:aaaeb97ea84c890b10a40bf353f722e4e"><td class="memItemLeft" align="right" valign="top">BStore&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#aaaeb97ea84c890b10a40bf353f722e4e">CStore</a></td></tr>
 <tr class="separator:aaaeb97ea84c890b10a40bf353f722e4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee04afd014c5339c4f3c536f6b7430b"><td class="memItemLeft" align="right" valign="top"><a id="aaee04afd014c5339c4f3c536f6b7430b"></a>
-std::map&lt; std::string, BStore * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#aaee04afd014c5339c4f3c536f6b7430b">Stores</a></td></tr>
-<tr class="memdesc:aaee04afd014c5339c4f3c536f6b7430b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a map of named BStore pointers which can be deffined to hold a nammed collection of any type of BStore. It is usefull to store data collections that needs subdividing into differnt stores. <br /></td></tr>
-<tr class="separator:aaee04afd014c5339c4f3c536f6b7430b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a551646ff882fb1bf7f40ecd0ada78af2"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, BStore * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDataModel.html#a551646ff882fb1bf7f40ecd0ada78af2">Stores</a></td></tr>
+<tr class="separator:a551646ff882fb1bf7f40ecd0ada78af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class Is a transient data model class for your Tools within the ToolChain. If Tools need to comunicate they pass all data objects through the data model. There fore inter tool data objects should be deffined in this class.</p>
 <dl class="section rcs"><dt>Author</dt><dd>B.Richards </dd></dl>
 <dl class="section rcs"><dt>Date</dt><dd>2019/05/26 18:34:00 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aaaeb97ea84c890b10a40bf353f722e4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaeb97ea84c890b10a40bf353f722e4e">&#9670;&nbsp;</a></span>CStore</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BStore DataModel::CStore</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is a more efficent binary Store that can be used to store a dynamic set of inter Tool variables, very useful for constants and and flags hence the name CStore </p>
+
+</div>
+</div>
+<a id="aa777da4c632e4659ee5b1447ad513458"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa777da4c632e4659ee5b1447ad513458">&#9670;&nbsp;</a></span>Log</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Logging* DataModel::Log</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Log class pointer for use in Tools, it can be used to send messages which can have multiple error levels and destination end points </p>
+
+</div>
+</div>
+<a id="a551646ff882fb1bf7f40ecd0ada78af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a551646ff882fb1bf7f40ecd0ada78af2">&#9670;&nbsp;</a></span>Stores</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::string, BStore*&gt; DataModel::Stores</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is a map of named BStore pointers which can be deffined to hold a nammed collection of any type of BStore. It is usefull to store data collections that needs subdividing into differnt stores. </p>
+
+</div>
+</div>
+<a id="a4baac5fe364a7a23762d70d2c2216486"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4baac5fe364a7a23762d70d2c2216486">&#9670;&nbsp;</a></span>vars</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Store DataModel::vars</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This Store can be used for any variables. It is an inefficent ascii based storage and command line arguments will be placed in here along with ToolChain variables </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="DataModel_8h_source.html">DataModel.h</a></li>
 <li>DataModel.cpp</li>
 </ul>
