@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thread_5fargs_22',['Thread_args',['../structThread__args.html',1,'']]]
+  ['hkdatamodel_23',['hkDataModel',['../classhkinstall_1_1hkDataModel.html',1,'hkinstall']]]
 ];
